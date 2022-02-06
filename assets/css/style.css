@@ -2,10 +2,12 @@
     --primary-color:  #212529;
     --secondary-color:  #dee2e6;
     --tertiary-color:  #6c757d;
+    box-sizing:border-box;
 }
 
 .flex-row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 body {
@@ -18,14 +20,16 @@ header {
     background-color: var(--primary-color);
     position: sticky;
     position: -webkit-sticky;
+    top: 0;
     height: 80px;
+    z-index: 999;
 }
 
 header h1 {
     color: var(--primary-color);
     background-color: var(--secondary-color);
     font-size: 36px;
-    flex: 0 0 250px;
+    flex: 1;
     text-align: right;
     height: 40px;
     padding: 10px;
@@ -33,15 +37,14 @@ header h1 {
 }
 
 header nav {
-    flex: 4;
-    margin: 15px;
+    flex: 2;
+    margin: 5px;
 }
 
 header nav ul {
     list-style: none;
     justify-content: space-around;
     padding: 0 30px 0 30px;
-    align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
 }
@@ -93,17 +96,21 @@ section h2 {
     border-right: solid;
     border-color:var(--tertiary-color);
     border-width: 3px;
+    margin: 10px;
 }
 
 section div {
     flex: 5;
-    margin: 10px 10px;
+    margin: 10px;
+}
+
+#about-me div p {
+    padding: 0px 10px;
 }
 
 /* card styling for work examples */
 .card {
     position: relative;
-    width: 90%;
     border: solid;
     border-color:var(--secondary-color);
     border-width: 3px;
@@ -113,16 +120,35 @@ section div {
     color:var(--primary-color);
     position: absolute;
     bottom: 5px;
-    padding: 5px;
     margin-bottom: 20px;
-}
-.card h3 {
-    font-size: 24px;
+    height: 80px;
     text-align: center;
+    padding-top: 5px;
+}
+.card article a {
+    text-decoration: none;
+    font-size: 30px;
+    margin: 10px;
+    color: var(--primary-color);
+    padding-top: 5px;
 }
 
 .card p {
     font-size: 14px;
+    padding: 5px;
+    text-align: left;
+}
+
+.big {
+    height: 500px;
+    background-image: url('../images/run-buddy.jpg');
+    background-size: cover;
+}
+
+.small {
+    height: 250px;
+    background-image: url(../images/placeholder.jpg);
+    background-size: cover;
 }
 
 /* contact me styling */
@@ -132,6 +158,7 @@ section div ul {
     padding: 0 30px 0 30px;
     align-items: center;
     flex-wrap: wrap;
+    margin: 20px;
 }
 
 section div ul li {
