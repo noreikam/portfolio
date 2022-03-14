@@ -141,15 +141,20 @@ section div {
 
 .big {
     height: 500px;
-    background-image: url('../images/run-buddy.jpg');
+    background-image: url('../images/foodio.jpg');
     background-size: cover;
 }
 
 .small {
     height: 250px;
-    background-image: url(../images/placeholder.jpg);
+    background-image: url('../images/placeholder.jpg');
     background-size: cover;
 }
+
+#foodio {
+    height: 250px;
+    background-image: url('../images/run-buddy.jpg');
+    background-size: cover;
 
 /* contact me styling */
 section div ul {
