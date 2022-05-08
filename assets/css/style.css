@@ -145,6 +145,12 @@ section div {
     background-size: cover;
 }
 
+.big-1 {
+    height: 500px;
+    background-image: url('../images/oyster-post.png');
+    background-size: cover;
+}
+
 .small {
     height: 250px;
     background-image: url('../images/placeholder.jpg');
@@ -155,6 +161,7 @@ section div {
     height: 250px;
     background-image: url('../images/run-buddy.jpg');
     background-size: cover;
+}
 
 /* contact me styling */
 section div ul {
